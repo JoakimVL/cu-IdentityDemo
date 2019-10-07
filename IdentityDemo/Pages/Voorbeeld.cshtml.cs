@@ -9,9 +9,11 @@ namespace IdentityDemo.Pages
 {
     public class VoorbeeldModel : PageModel
     {
+        public string Message { get; private set; } = "Vanuit de pagina in C#! ";
         public void OnGet()
         {
-
+            Message += $"Het is nu {DateTime.Now}.";
         }
     }
+
 }
